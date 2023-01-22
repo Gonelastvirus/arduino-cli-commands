@@ -57,4 +57,15 @@ arduino-cli lib search WiFi
 ```arduino
 arduino-cli lib install <library name>
 ```
+# Minicom
+Minicom is a text-based serial communication program that allows you to communicate with devices that have a serial interface, such as microcontrollers, modems, and other devices.
+Here are the basic steps to use Minicom to communicate with an Arduino board:
+* Connect your Arduino board to your computer using a USB cable.
+
+* Open a terminal window and enter the following command to start Minicom:
+```
+minicom -b 115200 -D /dev/ttyUSB0
+```
+    
+
 
