@@ -6,7 +6,7 @@ arduino-cli board list
 ## List all the boards that are supported by the tool, regardless of whether they are currently connected to the computer or not.
 
 **The command is:**
-```
+```arduino
 arduino-cli board listall
 ```
 ## The basic command for compiling a  ESP32 sketch is:
@@ -18,7 +18,7 @@ arduino-cli compile --fqbn esp32:esp32:esp32 <path/to/sketch.ino>
 arduino-cli upload -p <port> --fqbn esp32:esp32:esp32 <path/to/sketch.ino>
 ```
 # To get package for esp8266 or esp32 you need to configure home/.arduino15 file 
-```
+```arduino
 board_manager:
   additional_urls: [ https://arduino.esp8266.com/stable/package_esp8266com_index.json,
   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
@@ -46,7 +46,7 @@ updater:
   enable_notification: true
 ```
 ## To search for a library, use the following command:
-```
+```arduino
 arduino-cli lib search <library name>
 ```
 For example, to search for the "WiFi" library, you would use the following command:
@@ -54,7 +54,7 @@ For example, to search for the "WiFi" library, you would use the following comma
 arduino-cli lib search WiFi
 ```
 ## To install a library, you can use the following command:
-```
+```arduino
 arduino-cli lib install <library name>
 ```
 
